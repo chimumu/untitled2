@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.left {
+    width: auto;
+    height: 150px;
+}
+
+.left div {
+    width: 150px;
+    height: 120px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    background: #bbffaa;
+    font-size: 10px;
+    border: 1px solid #ccc;
+}
+.left div ul li{
+    list-style: none;
+}
