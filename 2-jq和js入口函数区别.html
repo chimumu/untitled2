@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script>
+        // 1
+     // js入口函数
+     //    window.onload=function (env) {
+     //       var img = document.getElementsByTagName('img')[0];
+     //       console.log(img);
+     //       var wicth = window.getComputedStyle(img).width;
+     //        console.log(wicth);
+     //    }
+     //    // jq写法
+     //    $(document).ready(function () {
+     //        var $img=$('img')[0];
+     //        console.log($img)
+     //        var $width =$img.width
+     //        console.log($width)
+     //    })
+     //     2
+     //    window.onload=function () {
+     //      alert("hello")
+     //    };
+     //    window.onload=function () {
+     //      alert("python")
+     //    };
+     //    $(document).ready(function () {
+     //       alert("pp")
+     //    });
+     //    $(document).ready(function () {
+     //      alert("oo")
+     //    });
+        js加载方式dom元素加载完图片加载完执行后面例子1
+        js有多个入口函数后面会覆盖前面例子2
+        Jq加载dom后不等加载完图片后直接执行后面例子1
+        jq多个入口函数后面不会覆盖前面
+    </script>
+    <title>Title</title>
+</head>
+<body>
+  <img src="https://img13.360buyimg.com/pop/s590x470_jfs/t1/85391/8/18826/95485/5e97d558Edda5fbae/281ce633385cb7fc.jpg.webp" alt="ni">
+</body>
+</html>

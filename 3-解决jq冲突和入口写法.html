@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script>
+        // // 1入口函数写法
+        // $(document).ready(function () {
+        //   alert("hello")
+        // });
+        // // 2入口函数写法
+        // jQuery(document).ready(function () {
+        //   alert("pp")
+        // });
+        // // 3入口函数写法
+        // $(function () {
+        //   alert("jquery")
+        // });
+        // // 4入口函数写法
+        // jQuery(function () {
+        //   alert("mm")
+        // })
+
+
+        // 释放$使用权和使用其他自定义字符解决冲突问题注意JQ必须写在其他使用$框架的前面
+        // jQuery.noConflict();
+        // jQuery(function () {
+        //    alert("h")
+        // });
+        //自定义
+        var ll=jQuery.noConflict();
+        ll(function () {
+            alert("h")
+        });
+    </script>
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>

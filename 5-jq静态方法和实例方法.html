@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script>
+        // 创建一个类
+        function  Aclass() {
+        }
+        //创造静态方法
+        Aclass.static=function () {
+          alert("hello")
+        }
+        Aclass.static();
+        // 实例方法
+        Aclass.prototype.mercury=function () {
+           alert("python");
+        }
+        var a=new Aclass();
+        a.mercury();
+    </script>
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>

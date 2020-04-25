@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script>
+        $(function () {
+            var arr={1:2,4:3};
+            var arr1=["b","c","s"];
+            var $log1=$.each(arr1,function (index,value) {
+                console.log(index,value);
+                return (index+value);//不支持对回掉函数的数组修改
+            });
+            var $log2=$.map(arr1,function (index,value) {
+                console.log(index,value);
+                return (index+value);//支持通过return 对回掉函数中的数组的修改
+            });
+            console.log($log1);  //each 返回数组
+            console.log($log2);//map 返回空数组
+        })
+    </script>
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
